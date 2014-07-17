@@ -19,7 +19,7 @@ var (
 
 func SetupDB() *sql.DB {
   // db, err := sql.Open("postgres", "host=localhost user=postgres password=ankit1234 dbname=App42PaaS-Rails-PostgreSQL-Sample_development sslmode=disable")
-  db, err := sql.Open("postgres", "host=VM IP port= VM PORT user=USERNAME password=PASSWORD dbname=DATABASENAME sslmode=disable")
+  db, err := sql.Open("postgres", "host=192.168.3.241 port= 17698 user=al6r5nqksm7px47i password=a410ltuszxnn0wvax5f56bynur8t31ib dbname=aaaaaaa sslmode=disable")
   fmt.Println(db)
   PanicIf(err)
   ctble, err := db.Query(createTable)
